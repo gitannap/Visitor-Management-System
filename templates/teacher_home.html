@@ -1,0 +1,64 @@
+{% extends 'common_teacher.html' %}
+
+{% block common_teacher %}
+
+   <div class="student">
+           <div class="container">
+          <div class="row min-height">
+              <div class="col-sm-12">
+                             
+                            <div class="row main_boder">
+                                <div class="col-sm-7">
+                                     <h3 class="appointmnet_list">Teacher Home</h3>
+                                </div>
+                                  <div class="col-sm-5" style="text-align: right;">
+                                    <h4>Hi {{user_name}}!</h4>
+                                   </div>
+                                  </div>
+                                  <div class="row">
+                                   <!-- Card to view appointments -->
+                                   <div class="col-md-6">
+                                     <div class="card card-shadow">
+                                       <div class="card-body">
+                                         <h5 class="card-title">Booked Appointments</h5>
+                                         <p class="card-text">Click here to view the slots booked by the students</p>
+                                         <a href='{% url "teacher_appointment"%}' class="btn btn-primary">Go to Booked Appointments</a>
+                                       </div>
+                                     </div>
+                                   </div>
+                                   <!-- Card to book appointments -->
+                                   <div class="col-md-6">
+                                     <div class="card card-shadow">
+                                       <div class="card-body">
+                                         <h5 class="card-title">Appointment Slot Creator</h5>
+                                         <p class="card-text">Click here to create time slots when students can meet you</p>
+                                         <a href='{% url "teacher_appointment_list"%}' class="btn btn-primary">Create Appointment Slot</a>
+                                       </div>
+                                     </div>
+                                   </div>
+                                 </div>   
+                                   
+              </div>
+       
+          </div>
+      </div>
+      </div>
+
+      <div class="footer">
+           <div class="container">
+          <div class="row">
+              <div class="col-sm-12">
+                Visitor Management System | 2024                    
+              </div>
+       
+          </div>
+      </div>
+      </div>
+
+
+
+    
+{% endblock common_teacher %}
+
+
+

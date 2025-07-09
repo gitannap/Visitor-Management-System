@@ -1,0 +1,75 @@
+{% extends 'common_student.html' %}
+
+{% block common_student %}
+<style>
+  /* Custom CSS for cards */
+  .card-shadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+  }
+
+  .card-shadow:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+</style>
+   <div class="student">
+           <div class="container">
+          <div class="row min-height">
+              <div class="col-sm-12">
+                             
+                            <div class="row main_boder">
+                                <div class="col-sm-7">
+                                     <h3 class="appointmnet_list">Student Home</h3>
+                                </div>
+                                <div class="col-sm-5" style="text-align: right;">
+                                 <h4>Hi There, {{user_name}}!</h4>
+                                </div>
+ 
+                            </div>
+                            
+                            <div class="row">
+                              <!-- Card to view appointments -->
+                              <div class="col-md-6">
+                                <div class="card card-shadow">
+                                  <div class="card-body">
+                                    <h5 class="card-title">View Appointments</h5>
+                                    <p class="card-text">Click here to view your appointments.</p>
+                                    <a href='{% url "student"%}' class="btn btn-primary">Go to Appointments</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Card to book appointments -->
+                              <div class="col-md-6">
+                                <div class="card card-shadow">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Book Appointment</h5>
+                                    <p class="card-text">Click here to book a new appointment.</p>
+                                    <a href='{% url "quick_appointmnet"%}' class="btn btn-primary">Book Appointment</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>   
+              </div>
+       
+          </div>
+      </div>
+      </div>
+
+      <div class="footer">
+           <div class="container">
+          <div class="row">
+              <div class="col-sm-12">
+                Visitor Management System | 2024                     
+              </div>
+       
+          </div>
+      </div>
+      </div>
+
+
+
+    
+{% endblock common_student %}
+
+
+
