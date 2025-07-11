@@ -68,16 +68,16 @@ Here are a few screenshots to give you a visual overview of the application:
 ![Login Page](static/css/image/login.png)
 
 ### Create Appointment - user
-![Appointment](static/css/image/Create Appointment.png)
+![Appointment](static/css/image/Create_Appointment.png)
 
 ### Teacher Dashboard
-![Dashboard](static/css/image/Teacher dashboard.png)
+![Dashboard](static/css/image/Teacher_dashboard.png)
 
 ### Available Appointments - User
-![Dashboard](static/css/image/Available appointments.png)
+![Dashboard](static/css/image/Available_appointments.png)
 
 ### Student Dashboard (Appointment Details)
-![Dashboard](static/css/image/Student dashboard.png)
+![Dashboard](static/css/image/Student_dashboard.png)
 
 ---
 
